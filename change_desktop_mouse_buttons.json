@@ -1,0 +1,30 @@
+{
+    "title": "Change desktop using mouse buttons 4 and 5.",
+    "rules": [
+        {
+            "description": "Map mouse buttons 4 and 5 to control+right_arrow and control+left_arrow.",
+            "manipulators": [
+                {
+                    "type": "basic",
+
+                    "from": {"pointing_button": "button5"},
+
+                    "to": [{"key_code": "left_arrow",
+                            "modifiers": ["left_control"]}],
+
+                    "description": "Map button 5 to control+left_arrow"
+                },
+                 {
+                    "type": "basic",
+
+                    "from": {"pointing_button": "button4"},
+
+                    "to": [{"key_code": "right_arrow",
+                            "modifiers": ["left_control"]}],
+
+                    "description": "Map button 4 to control+right_arrow"
+                }
+            ]
+        }
+    ]
+}
